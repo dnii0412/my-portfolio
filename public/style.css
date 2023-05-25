@@ -8,48 +8,70 @@
 html {
   scroll-behavior: smooth;
 }
-header {
-  width: 100%;
-  height: 70px;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-header nav {
-  width: 100%;
-  display: flex;
-  padding-right: 100px;
-  justify-content: flex-end;
-}
-header img {
-  width: 3%;
-  float: left;
-  margin-left: 100px;
-}
-header nav ul {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-header nav ul li {
-  list-style: none;
-  color: white;
-  cursor: pointer;
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
-header nav ul:hover {
+.navbar {
+  width: 100%;
+  background-color: #f4f4f3;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  flex-direction: row;
 }
+.navbar img{
+
+}
+
+.burger{
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  display: none;
+  transition: 1s;
+}
+.burger ::after{
+  transition: 1s;
+}
+
+
+.line {
+  width: 100%;
+  height: 3px;
+  background: #fff;
+}
+
+.menu {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin-right: 15px;
+}
+
+.menu li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 
 /* first page */
 
 .div-one {
   width: 100%;
-  height: 120vh;
+  height: 100vh;
 }
 .starting-txt {
   margin-top: 100px;
@@ -108,20 +130,57 @@ header nav ul:hover {
   width: 20%;
   display: flex;
   justify-content: space-around;
-}
-
+  }
+/* .facebook{ 
+  border: 1px solid #000;
+  border-radius: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #000;
+} */
 .facebook:hover {
   color: blue;
   transition: 0.4s;
-}
+ }
+/* .instagram{ 
+  border: 1px solid #000;
+  border-radius: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #000;
+} */
 .instagram:hover {
   color: deeppink;
   transition: 0.4s;
 }
+/* .telegram{
+  border: 1px solid;
+  border: 1px solid #000;
+  border-radius: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #000;
+} */
 .telegram:hover {
   color: blue;
   transition: 0.4s;
 }
+/* .gmail{
+  border: 1px solid;
+  border-radius: 100%;
+  width: 20%;
+  background-color: #000;
+  color: white;
+} */
 .gmail:hover {
   color: red;
   transition: 0.4s;
@@ -138,8 +197,11 @@ header nav ul:hover {
   width: 47%;
   float: right;
   top: 0;
+  height: 90vh;
+  opacity: 0;
+  object-fit: contain;
 }
-.go-to-personal {
+.go-to-personal{
   margin-top: 20px;
 }
 .btn-1 {
@@ -155,38 +217,50 @@ header nav ul:hover {
   box-shadow: inset 150px 0 0 0 #000;
   color: white;
 }
-
 /*education div*/
 
 .div-two {
   width: 100%;
-  height: 90vh;
-  overflow: hidden;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#education {
-  width: 100%;
-  height: 100vh;
   background-color: #f4f4f3;
+}
+#education{
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+  }
 .edu-box-div {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  gap: 32px;
 }
 #edu-p-tag {
-  margin-top: 20px;
   text-align: center;
+}
+#edu-p-tag p{
   font-size: 36px;
+}
+.element-edu{
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: none;
+}
+.element-edu img{
+  width: 100%;
+}
+.school{
+  position: absolute;
+  z-index: -1 ;
 }
 .education-box-one {
   width: 26%;
-  height: 70vh;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   cursor: pointer;
   transition: 0.6s;
@@ -197,9 +271,11 @@ header nav ul:hover {
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
+.education-description{
+  padding: 40px 20px 0 20px ;
+}
 .education-box-two {
   width: 26%;
-  height: 70vh;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   cursor: pointer;
   transition: 0.6s;
@@ -212,10 +288,12 @@ header nav ul:hover {
 }
 .education-box-three {
   width: 26%;
-  height: 70vh;
+  /* height: 49vh; */
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   cursor: pointer;
   transition: 0.6s;
+  overflow: hidden;
+
 }
 .education-box-three:hover {
   transition: 0.4s;
@@ -226,32 +304,51 @@ header nav ul:hover {
 .school-name {
   display: flex;
   justify-content: space-around;
+  padding: 0 10px 0 10px ;
 }
 
 /*experience*/
 
 .div-three {
-  background-color: #fff;
+  background-color: #f4f4f4;
   text-align: center;
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.exp-card-1{
+  width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 84px;
 }
-.exp-box{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 36px;
+.exp-card-2{
+  gap: 84px;
 }
 .exp-txt {
   font-size: 36px;
+}
+.experience{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .experience-cart-one {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 300px;
-  height: 440px;
-  border: 1px solid black;
+  width: 25%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: 0.4s;
+}
+.experience-cart-one:hover{
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px,
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: 0.4s;
+
 }
 .honest-logo {
   width: 100%;
@@ -278,6 +375,7 @@ header nav ul:hover {
   box-shadow: inset 0 0 0 #000;
   transition: ease-out 0.3s;
   outline: none;
+  
 }
 .honest-web-btn:hover {
   box-shadow: inset 150px 0 0 0 #ff4d4d;
@@ -288,13 +386,21 @@ header nav ul:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 300px;
-  height: 440px;
-  border: 1px solid black;
+  align-items: center;
+  width: 25%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: 0.4s;
+}
+.experience-cart-two:hover
+{
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px,
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: 0.4s;
 }
 .phone-market-img{
   width: 100%;
-  height: 100%;
+  height: 95%;
   object-fit: cover;
 }
 .phone-market-logo{
@@ -305,7 +411,8 @@ header nav ul:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 10px;
+  width: 100%;
+  height: 100%; 
 }
 .market-h1{
   color: #ff4d4d;
@@ -331,9 +438,15 @@ header nav ul:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 300px;
-  height: 440px;
-  border: 1px solid black;
+  width: 25%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: 0.4s;
+}
+.experience-cart-three:hover{
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px,
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: 0.4s;
 }
 .biology-img{
   width: 100%;
@@ -374,9 +487,15 @@ header nav ul:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 300px;
-  height: 440px;
-  border: 1px solid black;
+  width: 25%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: 0.4s;
+}
+.experience-cart-four:hover{
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px,
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: 0.4s;
 }
 .intern-img{
   width: 100%;
@@ -412,4 +531,146 @@ header nav ul:hover {
 .intern-web-btn:hover{
   box-shadow: inset 150px 0 0 0 #ff4d4d;
   color: white;
+}
+.exp-card-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0px 100px 0 100px;
+  margin-top: 36px;
+}
+.exp-card-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0px 100px 0 100px;
+  margin-top: 36px;
+}
+.div-four{
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 32px;
+}
+.ach-container{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.achievements{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.achievements img{
+  width: 50%;
+  height: 50%;
+}
+.ach-p{
+  width: 100%;
+} 
+.ach-p p{
+  font-size: 36px;
+  text-align: center;
+ }
+ .ach-img-1{
+  display: flex;
+  justify-content: start;
+ }
+ .ach-img-2{
+  display: flex;
+  justify-content: end;
+ }
+ .ach-img-3{
+  display: flex;
+  justify-content: start;
+ }
+
+ /* skills */
+#p10{
+  font-size: 36px;
+  text-align: center;
+}
+.instrument-imgs{
+  width: 100%;
+  height: auto;
+}
+.skills{
+  width: 100%;
+  height: auto;
+}
+.all-inst{
+  width: 100%;
+}
+.all-inst img{
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+.insts{
+  width: 60%;
+}
+.insts img{
+  object-fit: cover;
+}
+.drum-fig{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.drum{
+  width: 100%;
+}
+.cajon-fig{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.cajon{
+  width: 100%;
+}
+.bonga-fig{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.bonga{
+  
+}
+footer{
+  width: 100%;
+  height: 40vh;
+  background-color: #f4f4f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+#contact{
+  font-size: 36px;
+}
+figure{
+
+}
+.social-2{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+#fig-img{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }

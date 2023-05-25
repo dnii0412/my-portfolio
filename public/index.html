@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danny's portfolio Web App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mobile.css">
+    <script
+      src="https://kit.fontawesome.com/e63f4ae073.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>  
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;600;700&display=swap");
+    </style>
+    <div class="navbar">
+      <div class="burger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <img class="logo" style="width: 5%; float: left;" src="./img/logo.png" alt="">
+      <ul class="menu" id="menu">
+        <li href="#" onclick="home()"><a>Home</a></li>
+        <li href="#" onclick="edu()"><a>Education</a></li>
+        <li href="#" onclick="exp()"><a>Experience  </a></li>
+        <li href="#" onclick="cont()"><a>Skills</a></li>
+      </ul>
+    </div>
+
+    <div class="div-one">
+      <div id="starting-img">
+        <div>
+          <img class="start-img" src="./img/20230321_132107.jpg" alt="" />
+        </div>
+      </div>
+      <div class="starting-txt">
+        <div class="its-me">
+          <span class="hello"> Hello. I'm-</span>
+          <span class="danny">Danny</span>
+        </div>
+        <div class="social">
+          <div class="facebook">
+            <i onclick="myfb()" class="fa-brands fa-facebook"></i>
+          </div>
+          <div class="instagram">
+            <i onclick="myig()" class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="telegram">
+            <i onclick="mytel()" class="fa-brands fa-telegram"></i>
+          </div>
+          <div class="gmail">
+            <i onclick="mygm()" class="fa-solid fa-envelope"></i>
+          </div>
+        </div>
+        <div class="description">
+          <p>
+            Welcome to <a class="programmer">Programmer</a> student's portfolio
+            website
+          </p>
+        </div>
+        <!-- <div class="go-to-personal">
+          <button onclick="personalinfo()" class="btn-1">Personal Info</button>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="div-two">
+      <div id="education">
+        <div id="edu-p-tag">
+          <p>Education</p>
+        </div>
+        <div class="edu-box-div">   
+        
+          <div class="education-box-one">
+            <figure class="element-edu">
+              <img src="https://scontent.fuln5-1.fna.fbcdn.net/v/t1.15752-9/343288451_792259552273184_109912730524887639_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=qMIh7bvaBacAX_ySsza&_nc_ht=scontent.fuln5-1.fna&oh=03_AdRC5rph-m7DrujCr1ionxXn38agn9tRHF3XPMijmglrUA&oe=6496557C" alt="">
+            </figure> 
+            <div class="school-name">
+              <p>Elementary education</p>
+              <p>111-th School</p>
+            </div>
+            <div class="edu-img-div">
+              <img style="width: 100%" src="./img/111.jpg" class="111" />
+            </div>
+            <div class="education-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Sapiente, accusamus ut quo fuga quidem, eius alias error numquam
+              est ea harum consequuntur in ex reprehenderit illum assumenda
+              fugiat commodi nesciunt!
+            </div>
+          </div>
+          <div class="education-box-two">
+            <div class="school-name">
+              <p>Middle School</p>
+              <p>111-th School</p>
+            </div>
+            <div class="edu-img-div">
+              <img style="width: 100%" src="./img/111.jpg" class="111"/>
+            </div>
+            <div class="education-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Sapiente, accusamus ut quo fuga quidem, eius alias error numquam
+              est ea harum consequuntur in ex reprehenderit illum assumenda
+              fugiat commodi nesciunt!
+            </div>
+          </div>
+          <div class="education-box-three">
+            <div class="school-name">
+              <p>High School</p>
+              <p>Amjilt Cyber School</p>
+            </div>
+            <div class="edu-img-div">
+              <img
+                style="width: 100%; height: 170px" src="./img/amjilt.jpg"class="amjilt"/>
+            </div>
+            <div class="education-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Sapiente, accusamus ut quo fuga quidem, eius alias error numquam
+              est ea harum consequuntur in ex reprehenderit illum assumenda
+              fugiat commodi nesciunt!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="div-four"> 
+      <div class="ach-container">
+        <div class="ach-p">
+          <p>How good student i'm</p>
+        </div>
+        <div class="achievements">
+          <div class="ach-img-1">
+            <img src="https://scontent.fuln5-1.fna.fbcdn.net/v/t1.15752-9/343288451_792259552273184_109912730524887639_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=qMIh7bvaBacAX_ySsza&_nc_ht=scontent.fuln5-1.fna&oh=03_AdRC5rph-m7DrujCr1ionxXn38agn9tRHF3XPMijmglrUA&oe=6496557C" alt="">
+          </div>
+          <div class="ach-img-2">
+            <img src="https://scontent.fuln5-1.fna.fbcdn.net/v/t1.15752-9/343257851_912559210036117_7076271022809512518_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=Vbpsm1DhsxkAX8oaQ65&_nc_ht=scontent.fuln5-1.fna&oh=03_AdSde5qtVfLiwlZQ79SZejBb5LGYTXK-5R9vFizNjMRIKg&oe=649687DC" alt="">
+          </div>
+          <div class="ach-img-3">
+            <img src="https://scontent.fuln5-1.fna.fbcdn.net/v/t1.15752-9/343601058_1313571995901875_5452856530757407551_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=osVZuRSFhi0AX-ZnOcS&_nc_ht=scontent.fuln5-1.fna&oh=03_AdTUQKjw_IakahwiCfrAZCSYcKBH83F8FS9-wXSMQUw9Ug&oe=64965DDD" alt="">
+          </div>
+        </div>
+      </div>
+   </div>  
+
+    <div class="div-three">
+        <div id="experience">
+          <div class="exp-txt">
+            <p>Experience</p>
+          </div>
+          <div class="exp-box">
+              <!-- card 1 -->
+            <div class="exp-card-1">
+              <div class="experience-cart-one">
+                <div class="honest-img">
+                  <img
+                    class="honest-logo"
+                    src="./img/honest media logo.jpg" alt="" />
+                </div>
+                <div class="hones-media-text">
+                  <div class="honest-h">
+                    <p class="honest-h1">Honest Media</p>
+                    <button onclick="honestmedia()" class="honest-web-btn">
+                      <a>Visit website</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 2 -->
+            <div class="experience-cart-two">
+              <div class="phone-market-logo">
+                <img class="phone-market-img" src="https://phonemarket-ed42e.web.app/galaxy-s23-ultra-highlights-kv.jpg" alt=""/>
+              </div>
+              <div class="phone-market-text">
+                <div class="market-h">
+                  <p class="market-h1" >Phone Marktet</p>
+                  <button class="market-web-btn" onclick="phonemarket()">
+                    <a>Visit website</a>
+                  </button>
+                </div>
+              </div>
+            </div> 
+            </div>
+            <div class="exp-card-2">
+             <!-- card 3  -->
+            <div class="experience-cart-three">
+              <div class="intern-logo">
+                <img class="intern-img" src="../public/Дадлагажигч Demo/img/logo" alt="">
+              </div>
+              <div class="intern-text">
+                <div class="intern-h">
+                  <p class="intern-h1" >Project</p>
+                  <button class="intern-web-btn" onclick="intern()">
+                    <a>Visit website</a>
+                  </button>
+                </div>
+                <p class="intern-p"></p>
+            
+              </div>
+            </div>
+             <!-- card 4 -->
+            <div class="experience-cart-four">
+              <div class="biology-logo">
+                <img class="biology-img" src="http://bichilgarag.com/BICHILGARAG/webhelp_img/Public/Anatomy/article_list/article_title_0001/RespirSystem.jpg?w=275&h=154&fit=crop" alt="">
+              </div>
+              <div class="biology-text">
+                <div class="biology-h">
+                  <p class="biology-h1" >Biology</p>
+                  <button class="biology-web-btn" onclick="biology()">
+                    <a>Visit website</a>
+                  </button>
+                </div>
+                <p class="biology-p"></p>
+                
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+   <form class="skills">
+    <p id="p10">Skills</p>
+      <section class="instrument-imgs">
+        <figure class="all-inst">
+          <img src="./img/drum set.jpg" alt="">
+        </figure>
+        <!-- <div class="insts">
+          <figure class="drum-fig">
+            <img class="drum" src="https://scontent.fuln6-1.fna.fbcdn.net/v/t1.15752-9/343726617_577781677553750_165058921436200470_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=G3jrRedNYS8AX8K7NXc&_nc_ht=scontent.fuln6-1.fna&oh=03_AdR1NAiOzq9OXjPuzR2M5sml7wHhSKPq7HSWPxX5E3sI2Q&oe=64959161" alt="">
+          </figure>
+          <figure class="cajon-fig">
+            <img src="https://scontent.fuln6-2.fna.fbcdn.net/v/t1.15752-9/343727159_202005309431471_3362281034533017889_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=xvqZIPWDhCQAX9Y1Xt4&_nc_ht=scontent.fuln6-2.fna&oh=03_AdSEbEs8D4FmrZ0zqosFBEO5oLwaE98lwguSBlJOIrL-6A&oe=64958EF3" alt="" class="cajon">
+          </figure>
+          <figure class="bonga-fig">
+            <img src="https://scontent.fuln6-1.fna.fbcdn.net/v/t1.15752-9/344639555_2563328607152293_5394254479105277488_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=3VUeUiU53z0AX8mnMe-&_nc_ht=scontent.fuln6-1.fna&oh=03_AdTVtuQTO3xOsXvWEX-GCXUBL9ScvOljGykI9ybeLU4UYA&oe=64957DA6" alt="" class="bonga">
+          </figure>
+        </div> -->
+      </section>
+   </form>
+
+   </div>
+
+      <!-- <div class="div-five">
+        <div class="clients">
+            <div class="client-img">
+                <img class="honest-img-2" src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div> 
+        <div class="about-myself">
+            <div class="about-me">
+                <p>About me</p>
+            </div>
+            <div class="about-me-img">~
+                <img src="" alt="">
+            </div>
+            <div class="about-me-txt">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus autem vero molestias iure eveniet officiis? Officia dicta deleniti illo assumenda, tempore accusantium? Soluta doloribus eius magni autem molestias, iure officiis.</p>
+            </div>
+        </div>
+     </div> -->
+
+    <footer>
+        <div id="contact">
+        <p >Contact</p>
+        </div>
+        <div id="fig-img">
+          <figure>
+            <img src="./img/logo.png" alt="">
+          </figure>
+          <div class="social-2">
+            <p style="font-size: 24px; font-weight: bold;">Social</p>
+            <div class="facebook">
+              <i onclick="myfb()" class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="instagram">
+              <i onclick="myig()" class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="telegram">
+              <i onclick="mytel()" class="fa-brands fa-telegram"></i>
+            </div>
+            <div class="gmail">
+              <i onclick="mygm()" class="fa-solid fa-envelope"></i>
+            </div>
+          </div>
+          <div class="phone-number">
+            <p style="font-size: 24px; font-weight: bold;">Tel</p>
+            <p>+976-8029-6007</p>
+            <p>+976-8029-8226</p>
+        </div>
+        </div>
+        
+    </footer>  
+  </body>
+  <script src="./script.js"></script>
+</html>

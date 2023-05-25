@@ -1,0 +1,174 @@
+@media (min-width:280px) and (max-width:480px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        max-width: 100vw;
+        height: 100%;
+    }
+    .navbar{
+        float: left;
+    }
+    .burger{
+        display: block;
+        display: flex;
+    }
+    .menu {
+        display: none;
+      }
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+      }
+      .line{
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+      }
+    .div-one{
+        width: 100%;
+        height: auto;   
+    }
+    .starting-img{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 100px;
+    }
+    .start-img{
+        width: 100%;
+        object-fit: contain;
+        margin-top: -22px;
+    }
+    .starting-txt{
+    width: 100%;
+    margin-top: -50px;
+    }
+    .its-me{
+    display: none;
+    justify-content: center;
+    gap: 100px;
+
+    }
+    .div-two{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    #education{
+    flex-direction: column;
+    width: 100%;
+    height: 230vh;
+    padding: 0 72px 0 72px;
+    }
+    .edu-box-div{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+    .education-box-one{
+        width: 100%;
+        height: 100%;
+    }
+    .education-box-two{
+        width: 100%;
+        height: 100%;
+    }
+    .education-box-three{
+        width: 100%;
+        height: 100%;
+    }
+    .div-three{
+        width: 100%;
+        height: auto;
+    }
+   .exp-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+   } 
+   .exp-card-1{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+   }
+   .exp-card-2{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    gap: -10px;
+   }
+   .div-four{
+    width: 100%;
+   }
+   .achievements{
+    padding: 0 90px 0 90px; 
+   }
+   .ach-container{
+    width: 100%;
+   }
+   .achievements img{
+    width: 50%;
+    height: 50%;
+  }
+  .ach-p{
+    width: 100%;
+  } 
+  .ach-p p{
+    font-size: 36px;
+    text-align: center;
+   }
+   .ach-img-1{
+    display: flex;
+    justify-content: start;
+   }
+   .ach-img-2{
+    display: flex;
+    justify-content: end;
+   }
+   .ach-img-3{
+    display: flex;
+    justify-content: start;
+   }
+   .experience-cart-one {
+    width: 100%;
+   }
+   .experience-cart-two{
+    width: 100%;
+   }
+   .experience-cart-three{
+    width: 100%;
+   }
+   .experience-cart-four{
+    width: 100%;
+   }
+   footer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+   }
+   figure img{
+   }
+   .fig-img{
+    display: flex;
+    flex-direction: row;
+   }
+   .social-2{
+   }
+   .phone-number{
+    display: none;
+    }
+    .logo{
+    }
+}
